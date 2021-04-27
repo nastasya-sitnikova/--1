@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta  charset="utf-8">
+<link rel="stylesheet" type="text/css" href="web4.css">
+<title>Web4</title>
+</head>
+<body>
+   <div class="center">
+    <h1>Форма анкеты пользователя</h1>
+  <form method="POST" action="web4.php">
+  <fieldset class="account-info">
+  
+<label id="q" for="famel1">Фамилия:</label>
+<input type="text"  name="famil1"/> </br></br>
+<label id="q" for="name1">Имя:</label>
+<input type="text"  name="name1"/></br></br>
+<label id="q" for="otchet1">Отчество:</label>
+<input type="text"  name="otchet1"/> </br></br>
+<label id="q" for="cebe1">О себе:</label>
+<textarea  rows="3" cols="50" name="cebe1"/> </textarea></br></br>
+<label id="q" for="datpog1">Дата рождения:</label>
+<input  type="date" name="datpog1"/> </br></br>
+<label id="q" for="lovepred1">Любимый предмет:</label>
+<select name="lovepred1">
+  <option  selected>Базы данных</option>
+  <option >Основы веб-программирования</option>
+  <option >Введение в численные методы</option>
+</select></br></br>
+
+<label id="q" for="loveprepod" name="loveprepod" >Любимый преподаватель:</label>
+<input type="checkbox" name="loveprepod1[0]" value="Терновой О.С." checked> Терновой О.С.
+<input type="checkbox" name="loveprepod1[1]" value="Папин А.А."> Папин А.А.
+<input type="checkbox" name="loveprepod1[2]" value="Кротова О.С." > Кротова О.С.
+<input type="checkbox" name="loveprepod1[3]" value="Хворова Л.А."> Хворова Л.А.
+<input type="checkbox" name="loveprepod1[4]" value="Дронов С.В." > Дронов С.В.
+</br></br>
+  </fieldset>
+  <fieldset class="account-action">
+    <input class="btn" type="submit" name="submit" value="Отправить данные">
+  </fieldset>
+
+
+</form>
+</div>
+</body> 
+</html>
